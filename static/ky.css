@@ -1,0 +1,123 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(130deg, #464646, #171717);
+    height: 92vh;
+    color: white;
+}
+
+.title {
+    font-family: monospace;
+    font-size: 80px;
+    background-color: black;
+    color: yellow;
+    width: fit-content;
+    margin-left: 24%;
+    text-align: center;
+    border-radius: 20px;
+    padding:20px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 1);
+    animation: titleFade 2s forwards;
+}
+
+@keyframes titleFade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+form input{
+    font-size: 40px;
+    border-radius: 20px;
+    margin-left:150px;
+    font-family: monospace;
+    color:black;
+}
+
+form label{
+    font-size:50px;
+    font-family: monospace;
+    color:yellow;
+}
+
+form button{
+    font-size: 40px;
+    color: yellow;
+    background-color: black;
+    border:none;
+    border-radius: 20px;
+    padding:20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form button:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 0, 1);
+}
+
+.link{
+    text-decoration: none;
+    color:yellow;
+    font-size: 20px;
+    font-family: monospace;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.link:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 0, 1);
+}
+.sidebar{
+    background-color: black;
+    position: fixed;
+    height: 90%;
+    width: 250px;
+    margin-left:10px;
+    margin-top: -10px;
+    animation: sidebarFadeIn 1s forwards;
+    border-radius: 10px;
+}
+
+@keyframes sidebarFadeIn {
+    0% {
+        opacity: 0;
+        left: -250px; /* Başlangıç pozisyonu */
+    }
+    100% {
+        opacity: 1;
+        left: 0; /* Bitiş pozisyonu */
+    }
+}
+
+.stitle {
+    font-family: monospace;
+    font-size: 50px;
+    color:yellow;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 1);
+}
+
+.sep{
+    height: 7px;
+    width: 225px;
+    border-color: yellow;
+    background-color: yellow;
+    border-radius: 5px;
+    margin-top: -20px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow; /* Scrollbar rengi */
+    border-radius: 6px; /* Scrollbar'ın köşeleri */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: lightyellow; /* Hover rengi */
+}

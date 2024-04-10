@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alHost | UPLOAD</title>
+    <link rel="stylesheet" href="../static/found.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="stitle">alHost</h2><hr class="sep"><br>
+        <a href="/" class="link">Anasayfa</a><br><br><br>
+        <a href="/kullanici_yukle" class="link">Kullanıcı olarak yükle</a><br><br><br>
+        <a href="/upload_css" class="link">Kullanıcı CSS yükle</a><br><br><br>
+        <a href="/read_file" class="link">Dosya oku</a><br><br><br>
+        <a href="/uploads_css" class="link">CSS Yüklemeler</a><br><br><br>
+        <a href="/html_yuklemeler" class="link">HTML Yüklemeler</a>
+    </div>  
+    <h1 class="title">alHost ile hosting</h1><br><br>
+    <h2 class="alter">sonuçlar: </h2><br><br>
+    {% for file in files%}
+       <a href="/{{ file.upload_id }}"><h2 class="found">{{ file.file_id }}</h2></a><br><br><br><br><br><br><br><br>
+    {% endfor %}
+
+
+</body>
+</html>

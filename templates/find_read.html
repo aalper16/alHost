@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alHost | UPLOAD WITH CSS</title>
+    <link rel="stylesheet" href="../static/find_read.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="stitle">alHost</h2><hr class="sep"><br>  
+        <a href="/" class="link">Anasayfa</a><br><br><br>
+        <a href="/kullanici_yukle" class="link">Kullanıcı HTML yükle</a><br><br><br>
+        <a href="/upload_css" class="link">Kullanıcı CSS yükle</a><br><br><br>
+        <a href="/read_file" class="link">Dosya oku</a><br><br><br>
+        <a href="/uploads_css" class="link">CSS Yüklemeler</a><br><br><br>
+        <a href="/html_yuklemeler" class="link">HTML Yüklemeler</a>
+    </div>
+    <h1 class="title">alHost ile hosting</h1><br><br>
+    <div class="container">
+        <form action="read" method="post" enctype="multipart/form-data" autocomplete="off">
+            <label for="filekind">Dosya türünü giriniz:</label><br>
+            <select name="filekind" class="file" required>
+                <option value="css">CSS</option>
+                <option value="html">HTML</option>
+            </select><br>
+            <input type="text" name="filename" placeholder="DOSYA İSMİ(uzantı yok)" required><br><br>
+            <button type="submit">BUL</button>
+        </form>
+    </div>
+
+</body>
+</html>
